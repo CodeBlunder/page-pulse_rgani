@@ -1,5 +1,6 @@
 
 # Page Pulse
+https://codeblunder.github.io/page-pulse_rgani/
 
 A URL auditing tool I built for a take-home task. Give it a URL, 
 it fetches the page and returns a report — SEO fields, load time, 
