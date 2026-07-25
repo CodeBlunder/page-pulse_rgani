@@ -3,13 +3,13 @@ import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 
-# tests/test_auditor.py
+
 import pytest
 import httpx
 from unittest.mock import AsyncMock, patch, MagicMock
 from auditor import audit_url
 
-# ✅ HAPPY PATH — valid HTML page
+
 @pytest.mark.asyncio
 async def test_valid_url_returns_full_report():
     fake_html = """
@@ -39,9 +39,9 @@ async def test_valid_url_returns_full_report():
     assert result["title"] == "Test Page"
     assert result["meta_description"] == "A test page"
     assert result["h1_count"] == 1
-    assert result["images_missing_alt"] == 1  # b.jpg has no alt
+    assert result["images_missing_alt"] == 1 
 
-# ❌ FAILURE CASE 1 — Timeout
+
 @pytest.mark.asyncio
 async def test_timeout_returns_error():
     with patch("auditor.httpx.AsyncClient") as mock_client:
@@ -53,7 +53,7 @@ async def test_timeout_returns_error():
     assert "error" in result
     assert "timed out" in result["error"].lower()
 
-# ❌ FAILURE CASE 2 — Non-HTML response (e.g., PDF or JSON API)
+
 @pytest.mark.asyncio
 async def test_non_html_response_returns_error():
     mock_response = MagicMock()
