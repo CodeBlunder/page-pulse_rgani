@@ -11,12 +11,12 @@ Live: [your-url-here]
 
 ## Stack
 
-Python, FastAPI, BeautifulSoup4. Nothing clever. I picked FastAPI 
+Python, FastAPI, BeautifulSoup4. I picked FastAPI 
 over Flask mostly because the main thing this does is make a network 
 request, and blocking on that felt wrong.
 
 Frontend is plain HTML/CSS/JS — no React, no build step. 
-Felt like overkill for one input and one results panel.
+
 
 ---
 
