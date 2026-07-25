@@ -1,4 +1,4 @@
-# main.py
+
 from fastapi import FastAPI, Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
@@ -7,7 +7,7 @@ from urllib.parse import urlparse
 
 app = FastAPI(title="Page Pulse API")
 
-# Allow frontend to call the backend
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
