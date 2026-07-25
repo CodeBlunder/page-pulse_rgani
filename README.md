@@ -119,15 +119,17 @@ something like `cachetools` would make it noticeably better.
 Also the frontend could show a score history if you audit 
 multiple URLs — right now each result replaces the last one.
 
+
+
 ---
 
 ## AI usage
-
 I Used Claude to help with the async mock syntax in the tests 
 (it's genuinely unintuitive), and to sanity-check my 
 BeautifulSoup selectors. The SEO scoring logic, the 
 auditor/main split decision, and the error handling approach 
 are all mine.
+
 ---
 
 *Built for Digital Heroes Training Task — [digitalheroesco.com](https://digitalheroesco.com)*
