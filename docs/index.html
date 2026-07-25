@@ -20,7 +20,7 @@
       flex-direction: column;
     }
 
-    /* ── header ── */
+    
     header {
       background: #0f1b33;
       color: #fff;
@@ -44,7 +44,7 @@
       font-size: 0.95rem;
     }
 
-    /* ── main container ── */
+    
     .container {
       max-width: 780px;
       margin: 40px auto;
@@ -53,7 +53,7 @@
       width: 100%;
     }
 
-    /* ── search bar ── */
+    
     .search-row {
       display: flex;
       gap: 10px;
@@ -97,7 +97,7 @@
       cursor: not-allowed;
     }
 
-    /* ── loader ── */
+    
     #loader {
       display: none;
       text-align: center;
@@ -106,7 +106,7 @@
       font-size: 0.95rem;
     }
 
-    /* ── error box ── */
+    
     .error-box {
       background: #fff5f5;
       border-left: 4px solid #e53e3e;
@@ -116,7 +116,7 @@
       font-size: 0.95rem;
     }
 
-    /* ── results card ── */
+    
     .results-card {
       background: #fff;
       border-radius: 14px;
@@ -138,7 +138,7 @@
       font-size: 1rem;
     }
 
-    /* ── metrics grid ── */
+    
     .metrics {
       padding: 8px 0;
     }
@@ -179,7 +179,7 @@
       font-style: italic;
     }
 
-    /* ── SEO score section ── */
+    
     .seo-section {
       border-top: 2px solid #f0f2f7;
       padding: 24px;
@@ -256,7 +256,7 @@
       color: #276749;
     }
 
-    /* ── footer ── */
+    
     footer {
       text-align: center;
       padding: 28px 20px;
@@ -273,7 +273,7 @@
       text-decoration: underline;
     }
 
-    /* ── responsive ── */
+    
     @media (max-width: 520px) {
       .search-row { flex-direction: column; }
       .metric { flex-direction: column; gap: 4px; }
@@ -312,7 +312,7 @@
 </footer>
 
 <script>
-  // change this to your deployed backend URL once you deploy
+  
   const API_BASE = "https://page-pulse-rgani.onrender.com";
 
   function getScoreClass(grade) {
@@ -338,7 +338,7 @@
       return;
     }
 
-    // reset state
+    
     resultsDiv.innerHTML = "";
     loader.style.display = "block";
     btn.disabled = true;
@@ -432,7 +432,7 @@
     }
   }
 
-  // let people hit Enter too
+  
   document.getElementById("urlInput").addEventListener("keydown", (e) => {
     if (e.key === "Enter") runAudit();
   });
